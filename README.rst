@@ -28,7 +28,7 @@ You can run the tests with via::
     django-admin.py test {{ app_name }}
 
 
-REMOVE BELOW THIS LINE
+REMOVE THIS LINE AND BELOW
 ======================
 
 pinax-starter-app
