@@ -1,6 +1,22 @@
 {{ app_name }}
 ========================
 
+.. image:: https://travis-ci.org/<user_or_org_name>/django-{{ app_name }}.png
+    :target: https://travis-ci.org/<user_or_org_name>/django-{{ app_name }}
+
+.. image:: https://coveralls.io/repos/<user_or_org_name>/django-{{ app_name }}/badge.png
+    :target: https://coveralls.io/r/<user_or_org_name>/django-{{ app_name }}
+
+.. image:: https://pypip.in/d/django-{{ app_name }}/badge.png
+    :target:  https://pypi.python.org/pypi/django-{{ app_name }}/
+
+.. image:: https://pypip.in/v/django-{{ app_name }}/badge.png
+    :target:  https://pypi.python.org/pypi/django-{{ app_name }}/
+
+.. image:: https://pypip.in/license/django-{{ app_name }}/badge.png
+    :target:  https://pypi.python.org/pypi/django-{{ app_name }}/
+
+
 Welcome to the documentation for django-{{ app_name }}!
 
 
