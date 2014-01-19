@@ -24,7 +24,7 @@ Execute::
 
 After you are running you have a fresh app, first update this readme by removing
 everything above and including this line and unindenting everything below this line. Also
-remember to edit the {{{<user_or_org_name>}}} in the travis and coveralls badge/links::
+remember to edit the ``<user_or_org_name>`` in the travis and coveralls badge/links::
 
     {{ app_name }}
     ========================
