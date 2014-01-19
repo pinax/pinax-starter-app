@@ -1,7 +1,6 @@
 # How to Contribute
 
-There are many ways you can help contribute to django-user-accounts and the
-various apps, themes, and starter projects that it is made up of. Contributing
+There are many ways you can help contribute to this project. Contributing
 code, writing documentation, reporting bugs, as well as reading and providing
 feedback on issues and pull requests, all are valid and necessary ways to
 help.
