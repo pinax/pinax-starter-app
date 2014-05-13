@@ -19,7 +19,7 @@ Getting Started
 Execute::
 
     pip install Django
-    django-admin.py startapp --template=https://github.com/pinax/pinax-starter-app/zipball/master --extension=py,rst,in,sh,rc,yml <project_name>
+    django-admin.py startapp --template=https://github.com/pinax/pinax-starter-app/zipball/master --extension=py,rst,in,sh,rc,yml,ini,coveragerc <project_name>
 
 
 After you are running you have a fresh app, first update this readme by removing
