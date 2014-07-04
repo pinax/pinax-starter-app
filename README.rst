@@ -29,21 +29,21 @@ remember to edit the ``<user_or_org_name>`` in the travis and coveralls badge/li
     {{ app_name }}
     ========================
     
-    .. image:: https://travis-ci.org/<user_or_org_name>/django-{{ app_name }}.png
+    .. image:: https://img.shields.io/travis/<user_or_org_name>/django-{{ app_name }}.svg
         :target: https://travis-ci.org/<user_or_org_name>/django-{{ app_name }}
     
-    .. image:: https://coveralls.io/repos/<user_or_org_name>/django-{{ app_name }}/badge.png
+    .. image:: https://img.shields.io/coveralls/<user_or_org_name>/django-{{ app_name }}.svg
         :target: https://coveralls.io/r/<user_or_org_name>/django-{{ app_name }}
     
-    .. image:: https://pypip.in/d/django-{{ app_name }}/badge.png
+    .. image:: https://img.shields.io/pypi/dm/django-{{ app_name }}.svg
         :target:  https://pypi.python.org/pypi/django-{{ app_name }}/
     
-    .. image:: https://pypip.in/v/django-{{ app_name }}/badge.png
+    .. image:: https://img.shields.io/pypi/v/django-{{ app_name }}.svg
         :target:  https://pypi.python.org/pypi/django-{{ app_name }}/
     
-    .. image:: https://pypip.in/license/django-{{ app_name }}/badge.png
+    .. image:: https://img.shields.io/badge/license-<license>-blue.svg
         :target:  https://pypi.python.org/pypi/django-{{ app_name }}/
-    
+
     
     Welcome to the documentation for django-{{ app_name }}!
     
