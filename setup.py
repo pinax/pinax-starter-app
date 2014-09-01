@@ -16,7 +16,7 @@ setup(
     description="",
     name="django-{{ app_name }}",
     long_description=read("README.rst"),
-    version=__import__("{{ app_name }}").__version__,
+    version="0.1",
     url="http://django-{{ app_name}}.rtfd.org/",
     license="MIT",
     packages=find_packages(),
