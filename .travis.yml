@@ -7,8 +7,8 @@ python:
 
 env:
   - DJANGO=https://github.com/django/django/tarball/master
-  - DJANGO=Django==1.6.5
-  - DJANGO=Django==1.5.8
+  - DJANGO=Django==1.6.6
+  - DJANGO=Django==1.5.9
 
 install:
   - pip install -e .
