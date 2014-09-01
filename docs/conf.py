@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 
-import os
+import pkg_resources
 import sys
 
 
@@ -30,8 +30,5 @@ man_pages = [(
     1
 ),]
 
-sys.path.insert(0, os.pardir)
-m = __import__("{{ app_name }}")
-
-version = m.__version__
+version = pkg_resources.get_distribution("django-{{ app_name }}").version
 release = version
