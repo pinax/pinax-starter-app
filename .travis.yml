@@ -1,22 +1,19 @@
 language: python
 
 python:
-  - 2.7
-  - 3.2
-  - 3.3
+  - "2.7"
+  - "3.2"
+  - "3.3"
+  - "3.4"
 
 env:
-  - DJANGO=https://github.com/django/django/tarball/master
-  - DJANGO=Django==1.6.5
-  - DJANGO=Django==1.5.8
+  - DJANGO=1.5
+  - DJANGO=1.6
+  - DJANGO=master
 
 install:
-  - pip install -e .
-  - pip install flake8 coverage coveralls $DJANGO
-
+  - pip install tox coveralls
 script:
-  - flake8 --max-line-length=100 --max-complexity=10 --statistics --benchmark {{ app_name }}
-  - coverage run setup.py test
-  - coverage report
+  - tox -e py${TRAVIS_PYTHON_VERSION//[.]/}-$DJANGO
 
 after_success: coveralls
