@@ -51,19 +51,7 @@ remember to edit the ``<user_or_org_name>`` in the travis and coveralls badge/li
     Running the Tests
     ------------------------------------
     
-    You can run the tests with via::
+    ::
     
-        python setup.py test
-    
-    or::
-    
-        make test
-    
-    or::
-    
-        make all
-    
-    or::
-    
-        python runtests.py
-
+        $ pip install detox
+        $ detox
