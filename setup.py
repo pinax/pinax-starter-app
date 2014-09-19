@@ -20,10 +20,6 @@ setup(
     url="http://django-{{ app_name}}.rtfd.org/",
     license="MIT",
     packages=find_packages(),
-    tests_require=[
-        "Django>=1.4",
-        "flake8",
-    ],
     test_suite="runtests.runtests",
     classifiers=[
         "Development Status :: 4 - Beta",
