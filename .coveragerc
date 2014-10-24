@@ -1,4 +1,7 @@
 [run]
 source = {{ app_name }}
-omit = {{ app_name }}/tests/*
+omit = {{ app_name }}/tests/*,{{ app_name }}/admin.py
 branch = 1
+
+[report]
+omit = {{ app_name }}/tests/*,{{ app_name }}/admin.py
