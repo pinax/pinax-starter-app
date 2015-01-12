@@ -14,10 +14,10 @@ setup(
     author="",
     author_email="",
     description="",
-    name="django-{{ app_name }}",
+    name="pinax-{{ app_name }}",
     long_description=read("README.rst"),
     version="0.1",
-    url="http://django-{{ app_name }}.rtfd.org/",
+    url="http://pinax-{{ app_name }}.rtfd.org/",
     license="MIT",
     packages=find_packages(),
     package_data={

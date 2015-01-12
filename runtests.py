@@ -12,8 +12,8 @@ DEFAULT_SETTINGS = dict(
         "django.contrib.auth",
         "django.contrib.contenttypes",
         "django.contrib.sites",
-        "{{ app_name }}",
-        "{{ app_name }}.tests"
+        "pinax.{{ app_name }}",
+        "pinax.{{ app_name }}.tests"
     ],
     DATABASES={
         "default": {
@@ -41,7 +41,7 @@ def runtests(*test_args):
     try:
         from django.test.runner import DiscoverRunner
         runner_class = DiscoverRunner
-        test_args = ["{{ app_name }}.tests"]
+        test_args = ["pinax.{{ app_name }}.tests"]
     except ImportError:
         from django.test.simple import DjangoTestSuiteRunner
         runner_class = DjangoTestSuiteRunner

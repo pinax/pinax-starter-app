@@ -6,13 +6,13 @@ Installation
 
 * Install the development version::
 
-    pip install django-{{ app_name }}
+    pip install pinax-{{ app_name }}
 
-* Add ``{{ app_name }}`` to your ``INSTALLED_APPS`` setting::
+* Add ``pinax.{{ app_name }}`` to your ``INSTALLED_APPS`` setting::
 
     INSTALLED_APPS = (
         # ...
-        "{{ app_name }}",
+        "pinax.{{ app_name }}",
         # ...
     )
 

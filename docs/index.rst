@@ -1,8 +1,6 @@
 ====================
-django-{{ app_name }}
+pinax-{{ app_name }}
 ====================
-
-Provides user {{ app_name }} to a Django project.
 
 
 Contents

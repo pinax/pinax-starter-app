@@ -6,5 +6,5 @@ except ImportError:
 
 urlpatterns = patterns(
     "",
-    (r"^", include("{{ app_name }}.urls")),
+    (r"^", include("pinax.{{ app_name }}.urls")),
 )

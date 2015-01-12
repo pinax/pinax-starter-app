@@ -1,16 +1,15 @@
 from __future__ import unicode_literals
 
 import pkg_resources
-import sys
 
 
 extensions = []
 templates_path = []
 source_suffix = ".rst"
 master_doc = "index"
-project = "django-{{ app_name }}"
+project = "pinax-{{ app_name }}"
 copyright_holder = "James Tauber and contributors"
-copyright = "2014, {0}".format(copyright_holder)
+copyright = "2015, {0}".format(copyright_holder)
 exclude_patterns = ["_build"]
 pygments_style = "sphinx"
 html_theme = "default"
@@ -30,5 +29,5 @@ man_pages = [(
     1
 ),]
 
-version = pkg_resources.get_distribution("django-{{ app_name }}").version
+version = pkg_resources.get_distribution("pinax-{{ app_name }}").version
 release = version
