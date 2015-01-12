@@ -22,7 +22,7 @@ setup(
     packages=find_packages(),
     package_data={
         "{{ app_name }}": []
-    }
+    },
     test_suite="runtests.runtests",
     tests_require=[
     ],
