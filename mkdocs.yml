@@ -1,0 +1,9 @@
+site_name: pinax-{{ app_name }}
+pages:
+- [index.md, Home]
+- [changelog.md, Change Log]
+theme: readthedocs
+repo_url: https://github.com/pinax/pinax-{{ app_name }}
+site_description: "an app"
+site_author: "Pinax Team"
+markdown_extensions: [admonition]
