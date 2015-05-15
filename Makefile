@@ -13,3 +13,5 @@ docs: documentation
 
 documentation:
 	python setup.py build_sphinx
+
+.PHONY: docs
