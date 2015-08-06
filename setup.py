@@ -17,7 +17,7 @@ setup(
     name="pinax-{{ app_name }}",
     long_description=read("README.rst"),
     version="0.1",
-    url="http://pinax-{{ app_name }}.rtfd.org/",
+    url="http://github.com/pinax/pianx-{{ app_name }}/",
     license="MIT",
     packages=find_packages(),
     package_data={

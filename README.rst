@@ -49,7 +49,7 @@ remember to edit the ``<user_or_org_name>`` in the travis and coveralls badge/li
         :target:  https://pypi.python.org/pypi/pinax-{{ app_name }}/
 
 
-    Welcome to the documentation for pinax-{{ app_name }}!
+    Documentation can be found at http://docs.pinaxproject.com/pinax-{{ app_name }}/
 
 
     Running the Tests
