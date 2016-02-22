@@ -1,6 +1,6 @@
 # How to Contribute
 
-There are many ways you can help contribute to this project. Contributing
+There are many ways you can help contribute to {{ app_name }}. Contributing
 code, writing documentation, reporting bugs, as well as reading and providing
 feedback on issues and pull requests, all are valid and necessary ways to
 help.
