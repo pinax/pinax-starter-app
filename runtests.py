@@ -37,6 +37,8 @@ def runtests(*test_args):
     parent = os.path.dirname(os.path.abspath(__file__))
     sys.path.insert(0, parent)
 
+    from django.core import checks
+ 
     try:
         from django.test.runner import DiscoverRunner
         runner_class = DiscoverRunner
@@ -46,6 +48,9 @@ def runtests(*test_args):
         runner_class = DjangoTestSuiteRunner
         test_args = ["tests"]
 
+    checks = checks.run_checks()
+    if checks:
+        sys.exit(checks)
     failures = runner_class(verbosity=1, interactive=True, failfast=False).run_tests(test_args)
     sys.exit(failures)
 
