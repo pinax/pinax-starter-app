@@ -24,6 +24,9 @@ setup(
         "{{ app_name }}": []
     },
     test_suite="runtests.runtests",
+    install_requires=[
+        "Django>=1.8"
+    ],
     tests_require=[
     ],
     classifiers=[
