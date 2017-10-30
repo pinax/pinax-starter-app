@@ -4,34 +4,8 @@ import sys
 
 import django
 
-from django.conf import settings
-
-
-DEFAULT_SETTINGS = dict(
-    INSTALLED_APPS=[
-        "django.contrib.auth",
-        "django.contrib.contenttypes",
-        "django.contrib.sites",
-        "pinax.{{ app_name }}",
-        "pinax.{{ app_name }}.tests"
-    ],
-    MIDDLEWARE_CLASSES=[],
-    DATABASES={
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": ":memory:",
-        }
-    },
-    SITE_ID=1,
-    ROOT_URLCONF="pinax.{{ app_name }}.tests.urls",
-    SECRET_KEY="notasecret",
-)
-
-
 def run(*args):
-    if not settings.configured:
-        settings.configure(**DEFAULT_SETTINGS)
-
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pinax.{{ app_name }}.tests.settings")
     django.setup()
 
     parent = os.path.dirname(os.path.abspath(__file__))

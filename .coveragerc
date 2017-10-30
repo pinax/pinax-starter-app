@@ -1,7 +1,0 @@
-[run]
-source = pinax
-omit = pinax/{{ app_name }}/tests/*,pinax/{{ app_name }}/admin.py
-branch = 1
-
-[report]
-omit = pinax/{{ app_name }}/tests/*,pinax/{{ app_name }}/admin.py

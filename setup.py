@@ -1,13 +1,4 @@
-import codecs
-
-from os import path
 from setuptools import find_packages, setup
-
-
-def read(*parts):
-    filename = path.join(path.dirname(__file__), *parts)
-    with codecs.open(filename, encoding="utf-8") as fp:
-        return fp.read()
 
 
 setup(
@@ -15,7 +6,6 @@ setup(
     author_email="",
     description="",
     name="pinax-{{ app_name }}",
-    long_description=read("README.rst"),
     version="0.1",
     url="http://github.com/pinax/pinax-{{ app_name }}/",
     license="MIT",
@@ -29,6 +19,9 @@ setup(
     ],
     tests_require=[
     ],
+    extras_require={
+        "pytest": ["pytest", "pytest-django"]
+    },
     classifiers=[
         "Development Status :: 4 - Beta",
         "Environment :: Web Environment",
